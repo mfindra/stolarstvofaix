@@ -1,0 +1,2 @@
+resize photos
+categories names overlayed by menu

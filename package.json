@@ -1,0 +1,16 @@
+{
+  "name": "stolarstvo",
+  "version": "1.0.0",
+  "description": "page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mf",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.15.0"
+  }
+}
