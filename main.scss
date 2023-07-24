@@ -32,6 +32,8 @@ body {
 }
 .inner img {
   transition: box-shadow 0.3s;
+  height: auto;
+  min-width: 100%;
 }
 
 .inner:hover img {
@@ -92,5 +94,8 @@ body {
   }
   .jumbtxt2 {
     font-size: 4rem;
+  }
+  .boxes {
+    max-width: 75%;
   }
 }

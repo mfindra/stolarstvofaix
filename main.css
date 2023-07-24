@@ -7841,7 +7841,9 @@ body {
   background-position: center; }
 
 .inner img {
-  transition: box-shadow 0.3s; }
+  transition: box-shadow 0.3s;
+  height: auto;
+  min-width: 100%; }
 
 .inner:hover img {
   box-shadow: 0 0 15px #0e0e0e; }
@@ -7890,6 +7892,9 @@ body {
     font-size: 6rem; }
 
   .jumbtxt2 {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+
+  .boxes {
+    max-width: 75%; } }
 
 /*# sourceMappingURL=main.css.map */
