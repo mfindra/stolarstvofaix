@@ -2,573 +2,196 @@
 <html lang="sk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stolárstvo Faix - úvod</title>
-
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stolárstvo Faix - Galéria</title>
+  <meta name="description" content="Galéria prác stolárstva Faix — dvere, kuchyne, nábytok, záhradné stavby z masívneho dreva. Pozrite si naše dokončené projekty.">
+  <link rel="icon" type="image/png" href="images/logo/wood.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-default fixed-top navbar-expand-sm navbar-dark bg-dark mt-2 mb-2">
-        <div class="container-fluid">
-            <a href="/index.html" class="navbar-brand navnad mt-2">Stolárstvo Faix</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse-target">
-                <span class="navbar-toggler-icon">
 
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapse-target">
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="/index.html">DOMOV</a>
-                    </li>
-                    <li class="nav-item active text-center">
-                        <a class="nav-link" href="gallery.html">GALÉRIA</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="contact.html">KONTAKT</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="pt-5">
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand">Stolárstvo Faix</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Domov</a></li>
+        <li><a href="gallery.html" class="active">Galéria</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="cont">
-        <div class="container-fluid pt-5">
-            <div class="row justify-content-around pt-3">
-                <div class="col-sm-12 col-lg-3 pb-2 pb-lg-0">
-                    <a href="#dvereID" class="btn btn-secondary btn-block">Dvere a priečky</a>
-                </div>
-                <div class="col-sm-12 col-lg-3 pb-2 pb-lg-0">
-                    <a href="#kuchyneID" class="btn btn-secondary btn-block">Kuchyne</a>
-                </div>
-                <div class="col-sm-12 col-lg-3 pb-2 pb-lg-0">
-                    <a href="#nabytokID" class="btn btn-secondary btn-block">Nábytok</a>
-                </div>
-                <div class="col-sm-12 col-lg-3 pb-2 pb-lg-0">
-                    <a href="#zahradaID" class="btn btn-secondary btn-block">Záhradný nábytok</a>
-                </div>
-                <div class="col-sm-12 col-lg-3 pb-2 pb-lg-0 d-block d-lg-none">
-                    <a href="#ineID" class="btn btn-secondary btn-block">Iné</a>
-                </div>
-            </div>
+  <main style="margin-top: var(--nav-height);">
+
+    <section class="section" style="padding-bottom: 0;">
+      <div class="container">
+        <h1 class="section-title">Galéria</h1>
+        <hr class="section-divider">
+        <p class="section-subtitle">Ukážky z našich dokončených projektov — od kuchýň po záhradný nábytok.</p>
+        <div class="gallery-nav">
+          <a href="#dvere">Dvere a priečky</a>
+          <a href="#kuchyne">Kuchyne</a>
+          <a href="#nabytok">Nábytok</a>
+          <a href="#zahrada">Záhradný nábytok</a>
+          <a href="#ine">Iné</a>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <div class="boxes ml-auto mr-auto">
-        <div class="container-fluid ">
-            <h2 id="dvereID" class="mtext mt-5"> Dvere a priečky</h2>
-            <div class="d-flex flex-row flex-wrap justify-content-center ml-auto mr-auto">
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/dvere01.jpg">
-                        <div class="inner">
-                            <img src="images/dvere01.jpg" class="img-fluid rounded mb-2" alt="dvere01">
-                        </div>
-                    </a>
+    <section class="section">
+      <div class="container">
 
-                    <a href="images/dvere02.jpg">
-                        <div class="inner">
-                            <img src="images/dvere02.jpg" class="img-fluid rounded mb-2" alt="dvere02">
-                        </div>
-                    </a>
-
-                    <a href="images/dvere03.jpg">
-                        <div class="inner">
-                            <img src="images/dvere03.jpg" class="img-fluid rounded mb-2" alt="dvere03">
-                        </div>
-                    </a>
-
-                    <a href="images/dvere04.jpg">
-                        <div class="inner">
-                            <img src="images/dvere04.jpg" class="img-fluid rounded mb-2" alt="dvere04">
-                        </div>
-                    </a>
-
-                </div>
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/dvere06.jpg">
-                        <div class="inner">
-                            <img src="images/dvere06.jpg" class="img-fluid rounded mb-2" alt="dvere06">
-                        </div>
-                    </a>
-
-                    <a href="images/dvere07.jpg">
-                        <div class="inner">
-                            <img src="images/dvere07.jpg" class="img-fluid rounded mb-2" alt="dvere07">
-                        </div>
-                    </a>
-
-                    <a href="images/dvere10.jpg">
-                        <div class="inner">
-                            <img src="images/dvere10.jpg" class="img-fluid rounded mb-2" alt="dvere10">
-                        </div>
-                    </a>
-
-                    <a href="images/dvere05.jpg">
-                        <div class="inner">
-                            <img src="images/dvere05.jpg" class="img-fluid rounded mb-2" alt="dvere05">
-                        </div>
-                    </a>
-
-                    <a href="images/dvere08.jpg">
-                        <div class="inner">
-                            <img src="images/dvere08.jpg" class="img-fluid rounded mb-2" alt="dvere08">
-                        </div>
-                    </a>
-
-                    <a href="images/dvere09.jpg">
-                        <div class="inner">
-                            <img src="images/dvere09.jpg" class="img-fluid rounded mb-2" alt="dvere09">
-                        </div>
-                    </a>
-                </div>
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/dvere.jpg">
-                        <div class="inner">
-                            <img src="images/dvere.jpg" class="img-fluid rounded mb-2" alt="dvere">
-                        </div>
-                    </a>
-
-                    <a href="images/priecka01.jpg">
-                        <div class="inner">
-                            <img src="images/priecka01.jpg" class="img-fluid rounded mb-2" alt="priecka01">
-                        </div>
-                    </a>
-
-                    <a href="images/priecka02.jpg">
-                        <div class="inner">
-                            <img src="images/priecka02.jpg" class="img-fluid rounded mb-2" alt="priecka02">
-                        </div>
-                    </a>
-
-                    <a href="images/priecka03.jpg">
-                        <div class="inner">
-                            <img src="images/priecka03.jpg" class="img-fluid rounded" alt="priecka03">
-                        </div>
-                    </a>
-
-                    <a href="images/dvere11.jpg">
-                        <div class="inner">
-                            <img src="images/dvere11.jpg" class="img-fluid rounded mb-2" alt="dvere11">
-                        </div>
-                    </a>
-                </div>
-            </div>
-
+        <!-- Dvere a priečky -->
+        <div id="dvere" class="gallery-category">
+          <h2>Dvere a priečky</h2>
+          <div class="gallery-grid">
+            <a href="images/dvere01.jpg"><img src="images/dvere01.jpg" alt="Dvere 1"></a>
+            <a href="images/dvere02.jpg"><img src="images/dvere02.jpg" alt="Dvere 2"></a>
+            <a href="images/dvere03.jpg"><img src="images/dvere03.jpg" alt="Dvere 3"></a>
+            <a href="images/dvere04.jpg"><img src="images/dvere04.jpg" alt="Dvere 4"></a>
+            <a href="images/dvere06.jpg"><img src="images/dvere06.jpg" alt="Dvere 6"></a>
+            <a href="images/dvere07.jpg"><img src="images/dvere07.jpg" alt="Dvere 7"></a>
+            <a href="images/dvere10.jpg"><img src="images/dvere10.jpg" alt="Dvere 10"></a>
+            <a href="images/dvere05.jpg"><img src="images/dvere05.jpg" alt="Dvere 5"></a>
+            <a href="images/dvere08.jpg"><img src="images/dvere08.jpg" alt="Dvere 8"></a>
+            <a href="images/dvere09.jpg"><img src="images/dvere09.jpg" alt="Dvere 9"></a>
+            <a href="images/dvere.jpg"><img src="images/dvere.jpg" alt="Dvere"></a>
+            <a href="images/priecka01.jpg"><img src="images/priecka01.jpg" alt="Priečka 1"></a>
+            <a href="images/priecka02.jpg"><img src="images/priecka02.jpg" alt="Priečka 2"></a>
+            <a href="images/priecka03.jpg"><img src="images/priecka03.jpg" alt="Priečka 3"></a>
+            <a href="images/dvere11.jpg"><img src="images/dvere11.jpg" alt="Dvere 11"></a>
+          </div>
         </div>
-        <hr class="w-75">
-    </div>
+        <hr class="gallery-divider">
 
-    <div class="boxes ml-auto mr-auto">
-        <div class="container-fluid">
-            <h2 id="kuchyneID" class="mtext mt-5">Kuchyne</h2>
-            <div class="d-flex flex-row flex-wrap justify-content-center">
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/kuchyna01.jpg">
-                        <div class="inner">
-                            <img src="images/kuchyna01.jpg" class="img-fluid rounded mb-2" alt="kuchyna01">
-                        </div>
-                    </a>
-
-                    <a href="images/kuchyna02.jpg">
-                        <div class="inner">
-                            <img src="images/kuchyna02.jpg" class="img-fluid rounded mb-2" alt="kuchyna02">
-                        </div>
-                    </a>
-
-                    <a href="images/kuchyna06.jpg">
-                        <div class="inner">
-                            <img src="images/kuchyna06.jpg" class="img-fluid rounded mb-2" alt="kuchyna06">
-                        </div>
-                    </a>
-                </div>
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/kuchyna04.jpg">
-                        <div class="inner">
-                            <img src="images/kuchyna04.jpg" class="img-fluid rounded mb-2" alt="kuchyna04">
-                        </div>
-                    </a>
-
-                    <a href="images/kuchyna05.jpg">
-                        <div class="inner">
-                            <img src="images/kuchyna05.jpg" class="img-fluid rounded mb-2" alt="kuchyna05">
-                        </div>
-                    </a>
-
-                    <a href="images/kuchyna03.jpg">
-                        <div class="inner">
-                            <img src="images/kuchyna03.jpg" class="img-fluid rounded mb-2" alt="kuchyna03">
-                        </div>
-                    </a>
-                </div>
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/kuchyna07.jpg">
-                        <div class="inner">
-                            <img src="images/kuchyna07.jpg" class="img-fluid rounded mb-2" alt="kuchyna07">
-                        </div>
-                    </a>
-
-                    <a href="images/kuchyna08.jpg">
-                        <div class="inner">
-                            <img src="images/kuchyna08.jpg" class="img-fluid rounded mb-2" alt="kuchyna08">
-                        </div>
-                    </a>
-
-                    <a href="images/kuchyna09.jpg">
-                        <div class="inner">
-                            <img src="images/kuchyna09.jpg" class="img-fluid rounded mb-2" alt="kuchyna09">
-                        </div>
-                    </a>
-                    <a href="images/kuchyna10.jpg">
-                        <div class="inner">
-                            <img src="images/kuchyna10.jpg" class="img-fluid rounded mb-2" alt="kuchyna10">
-                        </div>
-                    </a>
-                    <a href="images/kuchyna11.jpg">
-                        <div class="inner">
-                            <img src="images/kuchyna11.jpg" class="img-fluid rounded mb-2" alt="kuchyna11">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <hr class="w-75">
+        <!-- Kuchyne -->
+        <div id="kuchyne" class="gallery-category">
+          <h2>Kuchyne</h2>
+          <div class="gallery-grid">
+            <a href="images/kuchyna01.jpg"><img src="images/kuchyna01.jpg" alt="Kuchyňa 1"></a>
+            <a href="images/kuchyna02.jpg"><img src="images/kuchyna02.jpg" alt="Kuchyňa 2"></a>
+            <a href="images/kuchyna06.jpg"><img src="images/kuchyna06.jpg" alt="Kuchyňa 6"></a>
+            <a href="images/kuchyna04.jpg"><img src="images/kuchyna04.jpg" alt="Kuchyňa 4"></a>
+            <a href="images/kuchyna05.jpg"><img src="images/kuchyna05.jpg" alt="Kuchyňa 5"></a>
+            <a href="images/kuchyna03.jpg"><img src="images/kuchyna03.jpg" alt="Kuchyňa 3"></a>
+            <a href="images/kuchyna07.jpg"><img src="images/kuchyna07.jpg" alt="Kuchyňa 7"></a>
+            <a href="images/kuchyna08.jpg"><img src="images/kuchyna08.jpg" alt="Kuchyňa 8"></a>
+            <a href="images/kuchyna09.jpg"><img src="images/kuchyna09.jpg" alt="Kuchyňa 9"></a>
+            <a href="images/kuchyna10.jpg"><img src="images/kuchyna10.jpg" alt="Kuchyňa 10"></a>
+            <a href="images/kuchyna11.jpg"><img src="images/kuchyna11.jpg" alt="Kuchyňa 11"></a>
+          </div>
         </div>
-    </div>
+        <hr class="gallery-divider">
 
-    <div class="boxes ml-auto mr-auto">
-        <div class="container-fluid">
-            <h2 id="nabytokID" class="mtext mt-5">Nábytok</h2>
-            <div class="d-flex flex-row flex-wrap justify-content-center">
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/stol01.jpg">
-                        <div class="inner">
-                            <img src="images/stol01.jpg" class="img-fluid rounded mb-2" alt="stol01">
-                        </div>
-                    </a>
-
-                    <a href="images/stol02.jpg">
-                        <div class="inner">
-                            <img src="images/stol02.jpg" class="img-fluid rounded mb-2" alt="stol02">
-                        </div>
-                    </a>
-
-                    <a href="images/stol03.jpg">
-                        <div class="inner">
-                            <img src="images/stol03.jpg" class="img-fluid rounded mb-2" alt="stol03">
-                        </div>
-                    </a>
-
-                    <a href="images/stol04.jpg">
-                        <div class="inner">
-                            <img src="images/stol04.jpg" class="img-fluid rounded mb-2" alt="stol04">
-                        </div>
-                    </a>
-
-                    <a href="images/stol05.jpg">
-                        <div class="inner">
-                            <img src="images/stol05.jpg" class="img-fluid rounded mb-2" alt="stol05">
-                        </div>
-                    </a>
-
-                    <a href="images/stol06.jpg">
-                        <div class="inner">
-                            <img src="images/stol06.jpg" class="img-fluid rounded mb-2" alt="stol06">
-                        </div>
-                    </a>
-
-                    <a href="images/stol07.jpg">
-                        <div class="inner">
-                            <img src="images/stol07.jpg" class="img-fluid rounded mb-2" alt="stol07">
-                        </div>
-                    </a>
-                    <a href="images/chodba02.jpg">
-                        <div class="inner">
-                            <img src="images/chodba02.jpg" class="img-fluid rounded mb-2" alt="chodba02">
-                        </div>
-                    </a>
-                    <a href="images/skrina01.jpg">
-                        <div class="inner">
-                            <img src="images/skrina01.jpg" class="img-fluid rounded mb-2" alt="skrina01">
-                        </div>
-                    </a>
-                    <a href="images/postel.jpg">
-                        <div class="inner">
-                            <img src="images/postel.jpg" class="img-fluid rounded mb-2" alt="postel">
-                        </div>
-                    </a>
-                </div>
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/stol08.jpg">
-                        <div class="inner">
-                            <img src="images/stol08.jpg" class="img-fluid rounded mb-2" alt="stol08">
-                        </div>
-                    </a>
-
-                    <a href="images/stolicka.jpg">
-                        <div class="inner">
-                            <img src="images/stolicka.jpg" class="img-fluid rounded mb-2" alt="stolicka">
-                        </div>
-                    </a>
-
-                    <a href="images/skrina03.jpg">
-                        <div class="inner">
-                            <img src="images/skrina03.jpg" class="img-fluid rounded mb-2" alt="skrina03">
-                        </div>
-                    </a>
-
-                    <a href="images/skrina04.jpg">
-                        <div class="inner">
-                            <img src="images/skrina04.jpg" class="img-fluid rounded mb-2" alt="skrina04">
-                        </div>
-                    </a>
-
-                    <a href="images/skrina05.jpg">
-                        <div class="inner">
-                            <img src="images/skrina05.jpg" class="img-fluid rounded mb-2" alt="skrina05">
-                        </div>
-                    </a>
-
-                    <a href="images/skrina.jpg">
-                        <div class="inner">
-                            <img src="images/skrina.jpg" class="img-fluid rounded mb-2" alt="skrina">
-                        </div>
-                    </a>
-
-                    <a href="images/lavica01.jpg">
-                        <div class="inner">
-                            <img src="images/lavica01.jpg" class="img-fluid rounded mb-2" alt="lavica01">
-                        </div>
-                    </a>
-                    <a href="images/lavica02.jpg">
-                        <div class="inner">
-                            <img src="images/lavica02.jpg" class="img-fluid rounded mb-2" alt="lavica02">
-                        </div>
-                    </a>
-                    <a href="images/lavica03.jpg">
-                        <div class="inner">
-                            <img src="images/lavica03.jpg" class="img-fluid rounded mb-2" alt="lavica03">
-                        </div>
-                    </a>
-                    <a href="images/chodba01.jpg">
-                        <div class="inner">
-                            <img src="images/chodba01.jpg" class="img-fluid rounded mb-2" alt="chodba01">
-                        </div>
-                    </a>
-                </div>
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/skrina02.jpg">
-                        <div class="inner">
-                            <img src="images/skrina02.jpg" class="img-fluid rounded mb-2" alt="skrina02">
-                        </div>
-                    </a>
-
-                    <a href="images/skrina06.jpg">
-                        <div class="inner">
-                            <img src="images/skrina06.jpg" class="img-fluid rounded mb-2" alt="skrina06">
-                        </div>
-                    </a>
-
-                    <a href="images/vesiak1.jpg">
-                        <div class="inner">
-                            <img src="images/vesiak1.jpg" class="img-fluid rounded mb-2" alt="vesiak1">
-                        </div>
-                    </a>
-
-                    <a href="images/vesiak2.jpg">
-                        <div class="inner">
-                            <img src="images/vesiak2.jpg" class="img-fluid rounded mb-2" alt="vesiak2">
-                        </div>
-                    </a>
-
-                    <a href="images/truhla01.jpg">
-                        <div class="inner">
-                            <img src="images/truhla01.jpg" class="img-fluid rounded mb-2" alt="truhla01">
-                        </div>
-                    </a>
-
-                    <a href="images/truhla02.jpg">
-                        <div class="inner">
-                            <img src="images/truhla02.jpg" class="img-fluid rounded mb-2" alt="truhla02">
-                        </div>
-                    </a>
-
-                    <a href="images/skrina07.jpg">
-                        <div class="inner">
-                            <img src="images/skrina07.jpg" class="img-fluid rounded mb-2" alt="skrina07">
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
+        <!-- Nábytok -->
+        <div id="nabytok" class="gallery-category">
+          <h2>Nábytok</h2>
+          <div class="gallery-grid">
+            <a href="images/stol01.jpg"><img src="images/stol01.jpg" alt="Stôl 1"></a>
+            <a href="images/stol02.jpg"><img src="images/stol02.jpg" alt="Stôl 2"></a>
+            <a href="images/stol03.jpg"><img src="images/stol03.jpg" alt="Stôl 3"></a>
+            <a href="images/stol04.jpg"><img src="images/stol04.jpg" alt="Stôl 4"></a>
+            <a href="images/stol05.jpg"><img src="images/stol05.jpg" alt="Stôl 5"></a>
+            <a href="images/stol06.jpg"><img src="images/stol06.jpg" alt="Stôl 6"></a>
+            <a href="images/stol07.jpg"><img src="images/stol07.jpg" alt="Stôl 7"></a>
+            <a href="images/stol08.jpg"><img src="images/stol08.jpg" alt="Stôl 8"></a>
+            <a href="images/stolicka.jpg"><img src="images/stolicka.jpg" alt="Stolička"></a>
+            <a href="images/skrina01.jpg"><img src="images/skrina01.jpg" alt="Skriňa 1"></a>
+            <a href="images/skrina02.jpg"><img src="images/skrina02.jpg" alt="Skriňa 2"></a>
+            <a href="images/skrina03.jpg"><img src="images/skrina03.jpg" alt="Skriňa 3"></a>
+            <a href="images/skrina04.jpg"><img src="images/skrina04.jpg" alt="Skriňa 4"></a>
+            <a href="images/skrina05.jpg"><img src="images/skrina05.jpg" alt="Skriňa 5"></a>
+            <a href="images/skrina06.jpg"><img src="images/skrina06.jpg" alt="Skriňa 6"></a>
+            <a href="images/skrina07.jpg"><img src="images/skrina07.jpg" alt="Skriňa 7"></a>
+            <a href="images/skrina.jpg"><img src="images/skrina.jpg" alt="Skriňa"></a>
+            <a href="images/vesiak1.jpg"><img src="images/vesiak1.jpg" alt="Vešiak 1"></a>
+            <a href="images/vesiak2.jpg"><img src="images/vesiak2.jpg" alt="Vešiak 2"></a>
+            <a href="images/truhla01.jpg"><img src="images/truhla01.jpg" alt="Truhla 1"></a>
+            <a href="images/truhla02.jpg"><img src="images/truhla02.jpg" alt="Truhla 2"></a>
+            <a href="images/lavica01.jpg"><img src="images/lavica01.jpg" alt="Lavica 1"></a>
+            <a href="images/lavica02.jpg"><img src="images/lavica02.jpg" alt="Lavica 2"></a>
+            <a href="images/lavica03.jpg"><img src="images/lavica03.jpg" alt="Lavica 3"></a>
+            <a href="images/chodba01.jpg"><img src="images/chodba01.jpg" alt="Chodba 1"></a>
+            <a href="images/chodba02.jpg"><img src="images/chodba02.jpg" alt="Chodba 2"></a>
+            <a href="images/postel.jpg"><img src="images/postel.jpg" alt="Posteľ"></a>
+          </div>
         </div>
-        <hr class="w-75">
-    </div>
+        <hr class="gallery-divider">
 
-    <div class="boxes ml-auto mr-auto">
-        <div class="container-fluid">
-            <h2 id="zahradaID" class="mtext mt-5">Záhrada</h2>
-            <div class="d-flex flex-row flex-wrap justify-content-center">
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/altan.jpg">
-                        <div class="inner">
-                            <img src="images/altan.jpg" class="img-fluid rounded mb-2" alt="altan">
-                        </div>
-                    </a>
-                    <a href="images/hojdacka.jpg">
-                        <div class="inner">
-                            <img src="images/hojdacka.jpg" class="img-fluid rounded mb-2" alt="hojdacka">
-                        </div>
-                    </a>
-                    <a href="images/foliovnik.jpg">
-                        <div class="inner">
-                            <img src="images/foliovnik.jpg" class="img-fluid rounded mb-2" alt="foliovnik">
-                        </div>
-                    </a>
-                </div>
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/buda.jpg">
-                        <div class="inner">
-                            <img src="images/buda.jpg" class="img-fluid rounded mb-2" alt="buda">
-                        </div>
-                    </a>
-                    <a href="images/buda1.jpg">
-                        <div class="inner">
-                            <img src="images/buda1.jpg" class="img-fluid rounded mb-2" alt="buda1">
-                        </div>
-                    </a>
-                </div>
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/kurnik.jpg">
-                        <div class="inner">
-                            <img src="images/kurnik.jpg" class="img-fluid rounded mb-2" alt="kurnik">
-                        </div>
-                    </a>
-                    <a href="images/kurnik1.jpg">
-                        <div class="inner">
-                            <img src="images/kurnik1.jpg" class="img-fluid rounded mb-2" alt="kurnik1">
-                        </div>
-                    </a>
-
-                </div>
-            </div>
+        <!-- Záhrada -->
+        <div id="zahrada" class="gallery-category">
+          <h2>Záhrada</h2>
+          <div class="gallery-grid">
+            <a href="images/altan.jpg"><img src="images/altan.jpg" alt="Altán"></a>
+            <a href="images/hojdacka.jpg"><img src="images/hojdacka.jpg" alt="Hojdačka"></a>
+            <a href="images/foliovnik.jpg"><img src="images/foliovnik.jpg" alt="Fóliovník"></a>
+            <a href="images/buda.jpg"><img src="images/buda.jpg" alt="Búda"></a>
+            <a href="images/buda1.jpg"><img src="images/buda1.jpg" alt="Búda 2"></a>
+            <a href="images/kurnik.jpg"><img src="images/kurnik.jpg" alt="Kurník"></a>
+            <a href="images/kurnik1.jpg"><img src="images/kurnik1.jpg" alt="Kurník 2"></a>
+          </div>
         </div>
-        <hr class="w-75">
-    </div>
+        <hr class="gallery-divider">
 
-    <div class="boxes ml-auto mr-auto">
-        <div class="container-fluid">
-            <h2 id="ineID" class="mtext mt-5">Iné</h2>
-            <div class="d-flex flex-row flex-wrap justify-content-center">
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/zabradlie.jpg">
-                        <div class="inner">
-                            <img src="images/zabradlie.jpg" class="img-fluid rounded mb-2" alt="zabradlie">
-                        </div>
-                    </a>
-                    <a href="images/radiator.jpg">
-                        <div class="inner">
-                            <img src="images/radiator.jpg" class="img-fluid rounded mb-2" alt="radiator">
-                        </div>
-                    </a>
-                    <a href="images/okno02.jpg">
-                        <div class="inner">
-                            <img src="images/okno02.jpg" class="img-fluid rounded mb-2" alt="okno02">
-                        </div>
-                    </a>
-                </div>
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/most.jpg">
-                        <div class="inner">
-                            <img src="images/most.jpg" class="img-fluid rounded mb-2" alt="most">
-                        </div>
-                    </a>
-                    <a href="images/okno01.jpg">
-                        <div class="inner">
-                            <img src="images/okno01.jpg" class="img-fluid rounded mb-2" alt="okno01">
-                        </div>
-                    </a>
-                    <a href="images/atp.jpg">
-                        <div class="inner">
-                            <img src="images/atp.jpg" class="img-fluid rounded mb-2" alt="atp">
-                        </div>
-                    </a>
-                    <a href="images/kupelna.jpg">
-                        <div class="inner">
-                            <img src="images/kupelna.jpg" class="img-fluid rounded mb-2" alt="kupelna">
-                        </div>
-                    </a>
-                </div>
-                <div class="d-flex flex-column col-md-4 p-3">
-                    <a href="images/okenice.jpg">
-                        <div class="inner">
-                            <img src="images/okenice.jpg" class="img-fluid rounded mb-2" alt="okenice">
-                        </div>
-                    </a>
-                    <a href="images/kancelaria01.jpg">
-                        <div class="inner">
-                            <img src="images/kancelaria01.jpg" class="img-fluid rounded mb-2" alt="kancelaria01">
-                        </div>
-                    </a>
-                    <a href="images/kancelaria02.jpg">
-                        <div class="inner">
-                            <img src="images/kancelaria02.jpg" class="img-fluid rounded mb-2" alt="kancelaria02">
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <footer class="footer bg-dark py-3 mt-4">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-12 text-light">
-                    &reg;MF 2023
-                </div>
-            </div>
+        <!-- Iné -->
+        <div id="ine" class="gallery-category">
+          <h2>Iné</h2>
+          <div class="gallery-grid">
+            <a href="images/zabradlie.jpg"><img src="images/zabradlie.jpg" alt="Zábradlie"></a>
+            <a href="images/radiator.jpg"><img src="images/radiator.jpg" alt="Radiátor"></a>
+            <a href="images/okno02.jpg"><img src="images/okno02.jpg" alt="Okno 2"></a>
+            <a href="images/most.jpg"><img src="images/most.jpg" alt="Most"></a>
+            <a href="images/okno01.jpg"><img src="images/okno01.jpg" alt="Okno 1"></a>
+            <a href="images/atp.jpg"><img src="images/atp.jpg" alt="ATP"></a>
+            <a href="images/kupelna.jpg"><img src="images/kupelna.jpg" alt="Kúpeľňa"></a>
+            <a href="images/okenice.jpg"><img src="images/okenice.jpg" alt="Okenice"></a>
+            <a href="images/kancelaria01.jpg"><img src="images/kancelaria01.jpg" alt="Kancelária 1"></a>
+            <a href="images/kancelaria02.jpg"><img src="images/kancelaria02.jpg" alt="Kancelária 2"></a>
+          </div>
         </div>
 
-    </footer>
+      </div>
+    </section>
 
-    <button id="topBtn" class="btn btn-secondary"><i class="fas fa-arrow-up"></i></button>
+  </main>
 
-    <script>
-        $(document).ready(function () {
+  <footer class="footer">
+    &copy; 2026 Stolárstvo Faix
+  </footer>
 
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 40) {
-                    $('#topBtn').fadeIn();
-                } else {
-                    $('#topBtn').fadeOut();
-                }
-            });
+  <button class="back-to-top" id="topBtn" aria-label="Späť hore">&#8593;</button>
 
-            $("#topBtn").click(function () {
-                $('html ,body').animate({ scrollTop: 0 }, 800);
-            });
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.boxes');
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.gallery-grid');
+
+    (function () {
+      var btn = document.getElementById('topBtn');
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 200) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      });
+      btn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+
 </body>
 
 </html>

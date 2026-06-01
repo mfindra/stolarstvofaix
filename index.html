@@ -4,137 +4,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Stolárstvo Faix - úvod</title>
-  <link rel="stylesheet" href="main.css">
+  <title>Stolárstvo Faix</title>
+  <meta name="description" content="Stolárstvo Faix — profesionálne stolárske práce na mieru z masívneho dreva. Kuchyne, dvere, nábytok, záhradné stavby. Gerlachov, okr. Poprad.">
+  <link rel="icon" type="image/png" href="images/logo/wood.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-2 mb-2">
-    <div class="container-fluid">
-      <a href="/index.html" class="navbar-brand navnad mt-2">Stolárstvo Faix</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse-target">
-        <span class="navbar-toggler-icon">
-
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapse-target">
-
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active text-center">
-            <a class="nav-link" href="/index.html">DOMOV</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link" href="/gallery.html">GALÉRIA</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link" href="contact.html">KONTAKT</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand">Stolárstvo Faix</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Domov</a></li>
+        <li><a href="gallery.html">Galéria</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
     </div>
   </nav>
 
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4 text-center jumbtxt">Stolárstvo Faix</h1>
-      <p class="text-center jumbtxt2">Vitajte na stránkach stolárstva Faix</p>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Stolárstvo Faix</h1>
+      <p>Kvalitné stolárske práce na mieru z masívneho dreva</p>
+      <a href="gallery.html" class="hero-cta">Pozrite si naše práce</a>
     </div>
-  </div>
+  </section>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h3>Stolárske práce na mieru aj u vás doma</h3>
-        <hr class="w-75">
-        <h4>
-          Ponúkame profesionálne stolárske služby:
-        </h4>
-        <br>
-        <h5>
-          <b>Atypický nábytok:</b> kuchynské linky, kancelársky nábytok, vešiakové steny <br><br>
-          <b>Masívne drevo:</b> dvere, obložkové zárubne, postele, ploty, záhradný a reštauračný nábytok a iné
-        </h5>
-      </div>
-    </div>
-    <hr class="w-75">
-  </div>
-
-
-  <div class="container-fluid">
-    <div class="row text-center justify-content-center">
-      <div class="col-8 col-lg-3 col-sm-4">
-        <div class="card bg-primary">
-          <img src="/images/logo/first-place-medal-svgrepo-com.svg" class="card-img-top w-50 d-block m-auto" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Kvalita</h5>
-
-
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Stolárske práce na mieru</h2>
+        <hr class="section-divider">
+        <p class="section-subtitle">Profesionálne stolárske služby a výroba na mieru — aj u Vás doma.</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">&#9878;</div>
+            <h3>Atypický nábytok</h3>
+            <ul>
+              <li>Kuchynské linky</li>
+              <li>Kancelársky nábytok</li>
+              <li>Vešiakové steny</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#9880;</div>
+            <h3>Masívne drevo</h3>
+            <ul>
+              <li>Dvere a obložkové zárubne</li>
+              <li>Postele a nábytok</li>
+              <li>Ploty a záhradný nábytok</li>
+              <li>Reštauračný nábytok</li>
+            </ul>
           </div>
         </div>
       </div>
-      <br>
-      <div class="col-8 col-lg-3 col-sm-4 ">
-        <div class="card  bg-primary">
-          <img src="/images/logo/commercial-truck-svgrepo-com.svg" class="card-img-top w-50 d-block m-auto" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Flexibilta</h5>
+    </section>
 
-
+    <section class="section" style="background-color: var(--color-warm-white);">
+      <div class="container">
+        <h2 class="section-title">Prečo my?</h2>
+        <hr class="section-divider">
+        <div class="features">
+          <div class="feature-card">
+            <img src="images/logo/first-place-medal-svgrepo-com.svg" alt="Kvalita">
+            <h3>Kvalita</h3>
+            <p>Precízne spracovanie a dôraz na každý detail</p>
+          </div>
+          <div class="feature-card">
+            <img src="images/logo/commercial-truck-svgrepo-com.svg" alt="Flexibilita">
+            <h3>Flexibilita</h3>
+            <p>Výroba na mieru podľa vašich predstáv</p>
+          </div>
+          <div class="feature-card">
+            <img src="images/logo/euro-coins-stack-svgrepo-com.svg" alt="Výhodná cena">
+            <h3>Výhodná cena</h3>
+            <p>Férové ceny bez zbytočných príplatkov</p>
           </div>
         </div>
       </div>
-      <br>
-      <div class="col-8 col-lg-3 col-sm-4 ">
-        <div class="card bg-primary">
-          <img src="/images/logo/euro-coins-stack-svgrepo-com.svg" class="card-img-top w-50 d-block m-auto" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Výhodná cena</h5>
+    </section>
 
-
-          </div>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Naša práca</h2>
+        <hr class="section-divider">
+        <div class="slideshow">
+          <img src="images/showcase/01.jpg" alt="Ukážka práce 1" class="slide-active">
+          <img src="images/showcase/02.jpg" alt="Ukážka práce 2">
+          <img src="images/showcase/03.jpg" alt="Ukážka práce 3">
+          <img src="images/showcase/04.jpg" alt="Ukážka práce 4">
         </div>
       </div>
-    </div>
-    <hr class="w-75">
-  </div>
+    </section>
 
-
-  <div class="container-fluid">
-    <div id="carouselExampleSlidesOnly" class="carousel slide text-center d-none d-md-block" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="flex w-50" src="/images/showcase/01.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="flex w-50" src="/images/showcase/02.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="flex w-50" src="/images/showcase/03.jpg" alt="Third slide">
+    <section class="section cta-section">
+      <div class="container">
+        <h2 class="section-title" style="color: var(--color-cream);">Máte záujem?</h2>
+        <hr class="section-divider">
+        <p class="cta-text">Ozvite sa nám a spoločne vymyslíme riešenie presne pre vás.</p>
+        <div class="cta-buttons">
+          <a href="tel:+421904382168" class="cta-btn cta-btn-primary">Zavolajte nám</a>
+          <a href="contact.html" class="cta-btn cta-btn-outline">Kontaktné údaje</a>
         </div>
       </div>
-    </div>
-  </div>
-  <footer class="footer bg-dark py-3 mt-4">
-    <div class="container-fluid">
-      <div class="row text-center">
-        <div class="col-12 text-light">
-          &reg;MF 2023
-        </div>
-      </div>
-    </div>
+    </section>
+  </main>
 
+  <footer class="footer">
+    &copy; 2026 Stolárstvo Faix
   </footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+
+  <script>
+    (function () {
+      const slides = document.querySelectorAll('.slideshow img');
+      if (!slides.length) return;
+      let current = 0;
+      setInterval(function () {
+        slides[current].classList.remove('slide-active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('slide-active');
+      }, 4000);
+    })();
+  </script>
+
 </body>
 
 </html>

@@ -2,82 +2,76 @@
 <html lang="sk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stolárstvo Faix - úvod</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stolárstvo Faix - Kontakt</title>
+  <meta name="description" content="Kontaktujte Stolárstvo Faix — Ján Faix, Letná 62, Gerlachov (okr. Poprad). Telefón: 0904 382 168.">
+  <link rel="icon" type="image/png" href="images/logo/wood.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-2 mb-2">
-        <div class="container-fluid">
-            <a href="/index.html" class="navbar-brand navnad mt-2">Stolárstvo Faix</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse-target">
-                <span class="navbar-toggler-icon">
-
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapse-target">
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="/index.html">DOMOV</a>
-                    </li>
-                    <li class="nav-item text-center">
-                        <a class="nav-link" href="/gallery.html">GALÉRIA</a>
-                    </li>
-                    <li class="nav-item active text-center">
-                        <a class="nav-link" href="contact.html">KONTAKT</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-    <div class="container-fluid text-center">
-        <h3>
-            Ján Faix <br>
-            Letná 62 Gerlachov (okr. Poprad)<br>
-            <a href="tel:+42104382168"><span class="text-dark number">0904 382 168</span></a><br>
-            <a href="mailto:stolarstvofaix@szm.sk" class="text-dark">stolarstvofaix@szm.sk</a>
-        </h3>
-
-        <hr class="w-75">
-
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand">Stolárstvo Faix</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Domov</a></li>
+        <li><a href="gallery.html">Galéria</a></li>
+        <li><a href="contact.html" class="active">Kontakt</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="container-fluid text-center">
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10151.38117182638!2d20.20098955657047!3d49.10165432806501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7465750e4c76ff42!2sStol%C3%A1rstvo+Faix!5e0!3m2!1ssk!2ssk!4v1540383522162"
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <main style="margin-top: var(--nav-height);">
+
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Kontakt</h1>
+        <hr class="section-divider">
+
+        <div class="contact-card">
+          <h2>Ján Faix</h2>
+          <div class="contact-item">
+            <span class="contact-label">Adresa</span>
+            <span>Letná 62, Gerlachov (okr. Poprad)</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Telefón</span>
+            <a href="tel:+421904382168">0904 382 168</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">E-mail</span>
+            <a href="mailto:stolarstvofaix@szm.sk">stolarstvofaix@szm.sk</a>
+          </div>
         </div>
 
-    </div>
-
-
-    <footer class="footer bg-dark py-3 mt-4 ">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-12 text-light">
-                    &reg;MF 2023
-                </div>
-            </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10151.38117182638!2d20.20098955657047!3d49.10165432806501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7465750e4c76ff42!2sStol%C3%A1rstvo+Faix!5e0!3m2!1ssk!2ssk!4v1540383522162"
+            allowfullscreen
+            loading="lazy"
+            title="Mapa - Stolárstvo Faix">
+          </iframe>
         </div>
+      </div>
+    </section>
 
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+  </main>
+
+  <footer class="footer">
+    &copy; 2026 Stolárstvo Faix
+  </footer>
+
 </body>
 
 </html>
